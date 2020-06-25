@@ -1,0 +1,53 @@
+$fa-font-path:                "../static/webfonts";
+$mdi-font-path:               "../static/fonts";
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@mdi/font/scss/materialdesignicons';
+
+.fa-material {
+  color: rgba(0,0,0,0.54);
+  font-size: 21px;
+  width: 21px;
+}
+
+.CodeMirror {
+  height: calc(100% - 40px);
+  background-color: transparent;
+}
+.CodeMirror-gutters {
+  background-color: transparent;
+  border-right: none;
+}
+.pan-head {
+  height: 40px;
+  padding: 0 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg.svg-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    width: 14px;
+    height: 32px;
+    color: #666;
+    outline: none;
+    &:hover {
+      color: #000
+    }
+  }
+}
+.pans.resizing {
+  cursor: ew-resize;
+  .pan-resizer {
+    cursor: ew-resize;
+  }
+}
+.page.readonly {
+  .CodeMirror-cursor {
+    display: none !important
+  }
+}
+

@@ -1,0 +1,8 @@
+apps:
+  - script   : 'server/dist/bin/www.js'
+    name     : 'APP'
+    exec_mode: 'cluster'
+    instances: 2
+  - script   : 'server/dist/bin/task_runner.js'
+  - script   : 'npm'
+    args     : 'start'
